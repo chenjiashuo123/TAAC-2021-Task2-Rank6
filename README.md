@@ -1,25 +1,24 @@
 # **2021年腾讯广告算法大赛赛道二-两面包夹芝士方案**
 
-├── dataset 数据集存放位置，运行init.sh会自动生成
-│   ├── test_2nd 测试集存放位置
-│   └── train 训练集存放位置
-├── taac2021-tagging-lmbjzs 代码主文件夹
-│   ├── checkpoint 模型保存地址
-│   ├── config 配置文件
-│   ├── inference.py 推理代码
-│   ├── inference.sh 推理脚本 接收两个参数，第一个参数是操作，第二个参数是数据集路径，用于视频特征提取
-│   ├── __init__.py
-│   ├── init.sh 初始化脚本 包括环境配置、数据集目录生成以及数据拷贝，接收一个参数，即原始数据集路径
-│   ├── post-processing 后处理代码
-│   ├── pre 预处理代码  主要是视频特征提取代码
-│   ├── pretrain_models 预训练模型存位置
-│   ├── readme.md 
-│   ├── requirement.txt 环境要求
-│   ├── src 模型以及数据集代码
-│   ├── train.py 训练代码
-│   ├── train.sh 训练脚本 接收两个参数，第一个参数是操作，第二个参数是数据集路径，用于视频特征提取
-│   └── utils 工具类
-└── taac2021-tagging-lmbjzs.ipynb 运行接口
+├── dataset 数据集存放位置，运行init.sh会自动生成  
+│   ├── test_2nd 测试集存放位置  
+│   └── train 训练集存放位置  
+├── taac2021-tagging-lmbjzs 代码主文件夹  
+│   ├── checkpoint 模型保存地址  
+│   ├── config 配置文件  
+│   ├── inference.py 推理代码  
+│   ├── inference.sh 推理脚本 接收两个参数，第一个参数是操作，第二个参数是数据集路径，用于视频特征提取  
+│   ├── __init__.py  
+│   ├── init.sh 初始化脚本 包括环境配置、数据集目录生成以及数据拷贝，接收一个参数，即原始数据集路径  
+│   ├── post-processing 后处理代码  
+│   ├── pre 预处理代码  主要是视频特征提取代码  
+│   ├── pretrain_models 预训练模型存位置  
+│   ├── readme.md   
+│   ├── requirement.txt 环境要求  
+│   ├── src 模型以及数据集代码  
+│   ├── train.py 训练代码  
+│   ├── train.sh 训练脚本 接收两个参数，第一个参数是操作，第二个参数是数据集路径，用于视频特征提取  
+│   └── utils 工具类  
 
 ### **1 模型介绍**
 
