@@ -1,0 +1,6 @@
+efficientnet-pytorch==0.7.1
+timm
+opencv-python
+transformers
+boto3
+einops
