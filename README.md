@@ -21,8 +21,12 @@
 │   └── utils 工具类
 └── taac2021-tagging-lmbjzs.ipynb 运行接口
 
+### **1 模型介绍**
 
-### **1.1 环境配置**
+![avatar](picture/model.png)
+
+### **2 环境配置**
+
 我们环境是直接建立在腾讯云已有环境pytorch_py3的基础上
 conda activate pytorch_py3
 cd taac2021-tagging-lmbjzs
@@ -31,7 +35,7 @@ pip install -r requirement.txt
 
 也可以直接运行init.sh
 
-### **1.2 预训练模型下载以及新特征提取**
+### **3 预训练模型下载以及新特征提取**
 
 链接：https://pan.baidu.com/s/1QpN11YqPUuEQHkI-hDSGUg 
 提取码：taac
@@ -47,7 +51,7 @@ pip install -r requirement.txt
 
 3. 若要使用预训练模型进行预测，将ckpt中的20个模型下载到taac2021-tagging-lmbjzs/checkpoint下，之后参照测试流程。
 
-### **1.3 训练流程**
+### **4 训练流程**
 
 **如果下载新特征，可以直接从第三步开始**
 
@@ -58,14 +62,14 @@ sudo chmod a+x ./train.sh && ./train.sh frame ../../algo-2021/dataset/videos/vid
 直接运行train.sh 脚本 接收一个参数 **extract** 
 sudo chmod a+x ./train.sh && ./train.sh extract
 3. 训练集训练csv生成
-  直接运行train.sh 脚本 接收一个参数，**generate** 
-  sudo chmod a+x ./train.sh && ./train.sh generate
+    直接运行train.sh 脚本 接收一个参数，**generate** 
+    sudo chmod a+x ./train.sh && ./train.sh generate
 4. 训练
-  直接运行train.sh 脚本 接收一个参数，**train** 
-  sudo chmod a+x ./train.sh && ./train.sh train
-  **抽帧，特征提取以及训练总体时间大概30个小时**
+    直接运行train.sh 脚本 接收一个参数，**train** 
+    sudo chmod a+x ./train.sh && ./train.sh train
+    **抽帧，特征提取以及训练总体时间大概30个小时**
 
-### **1.3 测试流程**
+### **5 测试流程**
 
 
 
@@ -86,6 +90,4 @@ sudo chmod a+x ./inference.sh && ./inference.sh generate
 sudo chmod a+x ./inference.sh && ./inference.sh inference
 
 运行之后会在当前目录生成out.json，这个便是最后的结果
-**抽帧，特征提取以及推理总体时间大概6个小时**
-
 
