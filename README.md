@@ -55,38 +55,38 @@ pip install -r requirement.txt
 **如果下载使用vit提取的帧特征，可以直接从第三步开始**
 
 1. 训练集视频帧抽取 
-直接运行train.sh 脚本 接收两个参数，第一个是**frame** 代表抽帧，第二个是训练集视频路径, **视频路径最后需要有/**
+直接运行train.sh 脚本 接收两个参数，第一个是**frame** 代表抽帧，第二个是训练集视频路径, **视频路径最后需要有/**  
 sudo chmod a+x ./train.sh && ./train.sh frame ../../algo-2021/dataset/videos/video_5k/train_5k/
 2. 训练集视频特征提取
-直接运行train.sh 脚本 接收一个参数 **extract** 
+直接运行train.sh 脚本 接收一个参数 **extract**   
 sudo chmod a+x ./train.sh && ./train.sh extract
 3. 训练集训练csv生成
-    直接运行train.sh 脚本 接收一个参数，**generate** 
-    sudo chmod a+x ./train.sh && ./train.sh generate
+    直接运行train.sh 脚本 接收一个参数，**generate**   
+    sudo chmod a+x ./train.sh && ./train.sh generate  
 4. 训练
-    直接运行train.sh 脚本 接收一个参数，**train** 
-    sudo chmod a+x ./train.sh && ./train.sh train
-    **抽帧，特征提取以及训练总体时间大概30个小时**
+    直接运行train.sh 脚本 接收一个参数，**train**   
+    sudo chmod a+x ./train.sh && ./train.sh train  
+    **抽帧，特征提取以及训练总体时间大概30个小时**  
 
 ### **5 测试流程**
 
 
 
 1. 测试集视频帧抽取 
-直接运行train.sh 脚本 接收两个参数，第一个是**frame** 代表抽帧，第二个是训练集视频路径, **视频路径最后需要有/**
-sudo chmod a+x ./inference.sh && ./inference.sh frame ../../algo-2021/dataset/videos/test_5k_2nd/
+直接运行train.sh 脚本 接收两个参数，第一个是**frame** 代表抽帧，第二个是训练集视频路径, **视频路径最后需要有/**  
+sudo chmod a+x ./inference.sh && ./inference.sh frame ../../algo-2021/dataset/videos/test_5k_2nd/  
 
 2. 测试集视频特征提取
-直接运行inference.sh 脚本 接收一个参数 **extract** 
-sudo chmod a+x ./inference.sh && ./inference.sh extract
+直接运行inference.sh 脚本 接收一个参数 **extract**   
+sudo chmod a+x ./inference.sh && ./inference.sh extract  
 
 3. 测试集数据集生成
-直接运行inference.sh 脚本 接收一个参数，**generate** 
-sudo chmod a+x ./inference.sh && ./inference.sh generate
+直接运行inference.sh 脚本 接收一个参数，**generate**   
+sudo chmod a+x ./inference.sh && ./inference.sh generate  
 
 4. 推理
-直接运行inference.sh 脚本 接收一个参数，**inference** 
-sudo chmod a+x ./inference.sh && ./inference.sh inference
+直接运行inference.sh 脚本 接收一个参数，**inference**   
+sudo chmod a+x ./inference.sh && ./inference.sh inference  
 
-运行之后会在当前目录生成out.json，这个便是最后的结果
+运行之后会在当前目录生成out.json，这个便是最后的结果  
 
