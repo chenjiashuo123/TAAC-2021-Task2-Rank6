@@ -27,10 +27,10 @@
 ### **2 环境配置**
 
 我们环境是直接建立在腾讯云已有环境pytorch_py3的基础上
-conda activate pytorch_py3
-cd taac2021-tagging-lmbjzs
-sudo apt-get install ffmpeg
-pip install -r requirement.txt
+conda activate pytorch_py3  
+cd taac2021-tagging-lmbjzs  
+sudo apt-get install ffmpeg  
+pip install -r requirement.txt  
 
 也可以直接运行init.sh
 
